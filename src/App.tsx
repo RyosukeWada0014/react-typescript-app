@@ -1,15 +1,16 @@
 import React from "react";
+import Counter from "./Counter";
 
 interface AppProps {
   message?: string;
 }
 
-const App: React.FC<AppProps> = ({ message }) => {
-  return <div>{message}</div>;
-};
-
-App.defaultProps = {
-  message: "Hello defaultProps",
+const App: React.FC = () => {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
 };
 
 export default App;
